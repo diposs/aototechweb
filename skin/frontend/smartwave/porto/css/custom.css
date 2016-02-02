@@ -13,6 +13,12 @@ a.tooltip-icon{border:1px solid #fff;color:#fff;border-radius:50%;display:block;
 .tooltip-popup em{font-size:10px}
 a.tooltip-close{position:absolute;right:10px;top:10px;color:#fff}
 .footer-middle>.container{position:relative}
+img {max-width: 100%;}
+.main-container {padding: 5px 0 50px;}
+.header-container.type4 .header-wrapper {margin-bottom: 5px;}
+.filter-products .products div.item .details-area .product-name,.category-products .products-grid li.item .details-area .product-name {min-height:54px;}
+.product-view .product-img-box .etalage-control {top: 180px;}
+html, body  {color:#222222;}
 
 /* tooltip for demo */
 @-webkit-keyframes tooltip-animation {

@@ -1,11 +1,13 @@
 <?php
 
-$installer = $this;
+require_once('app/Mage.php');
+
+Mage::app()->setCurrentStore(Mage::getModel('core/store')->load(Mage_Core_Model_App::ADMIN_STORE_ID));
+$installer = new Mage_Sales_Model_Mysql4_Setup; //Mage_Eav_Model_Entity_Setup,Mage_Catalog_Model_Resource_Setup,
+
 $installer->startSetup();
 
-if (version_compare(Mage::getVersion(), '1.4.1.0', '>=')) {
 	$installer->getConnection()->addColumn($this->getTable('sales/order'), 'dailydeals', 'varchar(255) NULL');
-}
 
 $installer->run("
 

@@ -155,8 +155,6 @@ if($enable_addtocart_sticky){
             ?>
                 <div class="product-name">
                     <h1 <?php if($enabled_richsnippets): ?>itemprop="name"<?php endif; ?>><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
-                    <h2>
-					<?php echo 'Already Bought: '.getQuantityOrderedBySku($_product->getSku()); ?>
                 </div>
                 <?php if($enabled_richsnippets): ?>
                 <?php
@@ -172,8 +170,10 @@ if($enable_addtocart_sticky){
                     </span>
                 <?php endif; ?>
                 <?php endif; ?>
-
+                <h2><?php echo 'History: <em class="text-success"><b>&nbsp'.getQuantityOrderedBySku($_product->getSku()).'&nbsp</b></em> Sold'; ?></h2>
                 <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+                <?php echo $this->getChildHtml('additional') ?>
+
                 <?php if ($_product->getShortDescription()):?>
                     <div class="short-description">
                         <h2><?php echo $this->__('Quick Overview') ?></h2>

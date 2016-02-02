@@ -2,8 +2,8 @@
 <config>
     <tabs>
         <add_this translate="label" module="sharingtool">
-            <label>AddThis</label>
-            <sort_order>100</sort_order>
+            <label>Sunpop AddThis</label>
+            <sort_order>200</sort_order>
         </add_this>
     </tabs>
     <sections>

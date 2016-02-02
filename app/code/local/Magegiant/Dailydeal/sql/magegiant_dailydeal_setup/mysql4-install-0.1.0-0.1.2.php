@@ -9,7 +9,7 @@ if (version_compare(Mage::getVersion(), '1.4.1.0', '>=')) {
 
 $installer->run("
 
-CREATE TABLE IF NOT EXISTS magegiant_dailydeal (
+CREATE TABLE IF NOT EXISTS {$this->getTable('dailydeal/dailydeal')} (
   `id` int(11) unsigned NOT NULL auto_increment,
   `title` varchar(255) NOT NULL default '',
   `products` varchar(255) NULL,
