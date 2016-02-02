@@ -19,6 +19,7 @@ img {max-width: 100%;}
 .filter-products .products div.item .details-area .product-name,.category-products .products-grid li.item .details-area .product-name {min-height:54px;}
 .product-view .product-img-box .etalage-control {top: 180px;}
 html, body  {color:#222222;}
+.bottom-home-dailydeal  {position:relative;bottom:-3px;opacity:0.8;}
 
 /* tooltip for demo */
 @-webkit-keyframes tooltip-animation {
