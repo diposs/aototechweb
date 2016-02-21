@@ -42,7 +42,14 @@
         <?php foreach ($_additional as $_data): ?>
             <tr>
                 <th class="label"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></th>
-                <td class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+                <td class="data">
+                <?php
+                    if ($_data['code']="weight")  {
+                        echo number_format($_helper->productAttribute($_product, $_data['value'], $_data['code']),3);
+                        } else {
+                        echo $_helper->productAttribute($_product, $_data['value'], $_data['code']);
+                        }
+                    ?></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
