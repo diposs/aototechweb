@@ -124,7 +124,7 @@ select.multiselect option:last-child{border-bottom:0}
 textarea{overflow:auto;padding:8px}
 input.radio{display:inline-block;margin:0 5px 0 0;vertical-align:middle}
 input.checkbox{margin-right:10px;display:inline-block}
-input.qty{margin-right:2px;display:inline-block;vertical-align:middle;height:38px;width:35px !important;font-size:14px;text-align:center;color:#08c;border-color:#e1e1e1}
+input.qty{margin:0 -1px;display:inline-block;vertical-align:middle;height:30px;width:35px !important;font-size:14px;text-align:center;color:#08c;border-color:#e1e1e1}
 button.button::-moz-focus-inner{padding:0;border:0}
 
 button.button{-webkit-border-fit:lines}
